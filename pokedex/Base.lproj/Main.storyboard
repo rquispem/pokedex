@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Main PokemonVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainPokemonVC" customModule="pokedex" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -137,11 +137,49 @@
                     <connections>
                         <outlet property="collection" destination="MWZ-ex-ZmI" id="mKV-y4-bC2"/>
                         <outlet property="searchBar" destination="Nwt-9h-IFv" id="05R-QY-f1H"/>
+                        <segue destination="2v1-72-lI5" kind="show" identifier="PokemoDetailVC" id="nSH-xM-gIP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="gHb-QC-VUV">
+            <objects>
+                <viewController id="2v1-72-lI5" customClass="PokemonDetailVC" customModule="pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eNw-OL-ef0"/>
+                        <viewControllerLayoutGuide type="bottom" id="q7V-sL-tbQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dXp-rx-Jrf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLO-Ca-7Ud">
+                                <rect key="frame" x="137.5" y="323.5" width="100" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9er-3D-CHS"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="uij-rc-enK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QLO-Ca-7Ud" firstAttribute="centerY" secondItem="dXp-rx-Jrf" secondAttribute="centerY" id="Ifa-5X-Wzt"/>
+                            <constraint firstItem="QLO-Ca-7Ud" firstAttribute="centerX" secondItem="dXp-rx-Jrf" secondAttribute="centerX" id="JnN-hZ-EIq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl" destination="QLO-Ca-7Ud" id="n1O-wX-Jpi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOR-zD-B7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858.39999999999998" y="139.880059970015"/>
         </scene>
     </scenes>
     <resources>
