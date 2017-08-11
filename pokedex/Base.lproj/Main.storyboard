@@ -174,6 +174,9 @@
                                             <constraint firstAttribute="width" constant="35" id="XUQ-iz-b2j"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="2v1-72-lI5" eventType="touchUpInside" id="txK-p7-DoU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -413,7 +416,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="71b-mg-2ue" id="ku8-HV-beE"/>
+                        <outlet property="currentEvoImg" destination="5us-jt-rZ8" id="8Qr-Pg-I65"/>
+                        <outlet property="defenseLbl" destination="HBb-3e-vlp" id="LJC-De-Brd"/>
+                        <outlet property="descriptionLbl" destination="Pe6-iX-x2f" id="Nni-Hj-AZa"/>
+                        <outlet property="evoLbl" destination="vzw-XY-IOr" id="Kyb-IB-tm0"/>
+                        <outlet property="heightLbl" destination="JpQ-RO-bub" id="VLv-bT-PAF"/>
+                        <outlet property="mainImg" destination="cMh-Qq-gWj" id="5Ag-HN-BDB"/>
                         <outlet property="nameLbl" destination="QLO-Ca-7Ud" id="n1O-wX-Jpi"/>
+                        <outlet property="nextEvoImg" destination="aBm-fC-A4g" id="ujz-io-qxg"/>
+                        <outlet property="pokedexLbl" destination="Wgp-eR-46h" id="UDB-z7-dFC"/>
+                        <outlet property="typeLbl" destination="asG-8Z-Vt1" id="JKZ-KN-U1n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOR-zD-B7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
